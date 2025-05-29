@@ -1,0 +1,22 @@
+<div class="listProdutos">
+    @for (item of listaCompras; track item.id) {
+    <div class="listProdutos-itens">
+        <div class="listProdutos-item-left">
+            <p> {{ item.title }} </p>
+            <p> {{ item.price }}</p>
+            <button (click)="detlhes()" > {{ mensagem }} </button>
+            @if ( clik ) {
+                <p>  {{ item.description}} </p>
+            }@else {
+                <p> </p>
+            }
+            
+        </div>
+
+        <div class="listProdutos-item-right">
+            <img src='{{ item.image }}' alt="">
+        </div>
+
+    </div>
+    }
+</div>

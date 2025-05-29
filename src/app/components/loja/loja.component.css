@@ -1,0 +1,25 @@
+.listProdutos{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap: 5%;
+    padding: 5%;
+}
+
+
+.listProdutos-itens {
+    display: flex;
+    width: 80%;
+    padding: 5%;
+    border: 2px solid;
+}
+
+.listProdutos-item-left, .listProdutos-item-right{
+    width: 50%;
+    align-content: center;
+}
+
+.listProdutos-item-right{
+    img{width: 200px;}
+}
