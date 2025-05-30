@@ -1,0 +1,43 @@
+<div class="product-detail-container">
+  @if (isLoading) {
+  <div class="loading">Carregando detalhes do produto...</div>
+  } @else if (product) {
+  <div class="product-detail">
+    <div class="product-image">
+      <img [src]="product.image" [alt]="product.title">
+    </div>
+
+    <div class="product-info">
+      <h1>{{ product.title }}</h1>
+
+      <div class="price-rating">
+        <span class="price">{{ product.price | currency:'BRL' }}</span>
+        <span class="rating">
+          ⭐ {{ product.rating.rate ?? 0 }} ({{ product.rating.count ?? 0 }} avaliações)
+        </span>
+      </div>
+
+      <div class="category">
+        <strong>Categoria:</strong> {{ product.category | titlecase }}
+      </div>
+
+      <div class="description">
+        <h3>Descrição</h3>
+        <p>{{ product.description }}</p>
+      </div>
+
+      <button (click)="productService.addToCart(product)" class="add-to-cart">
+        Adicionar ao Carrinho
+      </button>
+    </div>
+  </div>
+  } @else {
+  <div class="not-found">
+    Produto não encontrado
+  </div>
+  }
+
+ <button [routerLink]="['/products']" class="back-link">
+  ← Voltar para a lista de produtos
+</button>
+</div>
