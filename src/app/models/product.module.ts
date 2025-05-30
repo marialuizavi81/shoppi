@@ -10,9 +10,3 @@ export interface Product {
     count?: number;
   };
 }
-
-// Tipo para a resposta de avaliação do produto
-export interface ProductRating {
-  rate: number;
-  count: number;
-}

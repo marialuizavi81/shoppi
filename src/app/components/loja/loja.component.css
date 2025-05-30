@@ -1,4 +1,4 @@
-/* Estilos gerais */
+
 .product-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -6,7 +6,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Filtros */
+
 .filters {
   display: flex;
   gap: 15px;
@@ -36,7 +36,6 @@
   background-color: #e0e0e0;
 }
 
-/* Grid de produtos */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -140,7 +139,7 @@
   margin-top: 10px;
 }
 
-/* Carrinho */
+
 .cart-section {
   margin-top: 40px;
   padding-top: 20px;
@@ -195,7 +194,7 @@
   margin-top: 15px;
 }
 
-/* Mensagens */
+
 .loading, .error, .no-products {
   text-align: center;
   padding: 20px;
@@ -217,7 +216,6 @@
   grid-column: 1 / -1;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .filters {
     flex-direction: column;

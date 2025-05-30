@@ -61,12 +61,12 @@ export class LojaComponent implements OnInit {
 
   addToCart(product: Product): void {
     this.productService.addToCart(product);
-    this.loadCartItems(); // Atualiza a lista do carrinho
+    this.loadCartItems();
   }
 
   removeFromCart(productId: number): void {
     this.productService.removeFromCart(productId);
-    this.loadCartItems(); // Atualiza a lista do carrinho
+    this.loadCartItems(); 
   }
 
   getCartTotal(): number {
@@ -91,6 +91,6 @@ export class LojaComponent implements OnInit {
 
   getCategories(): string[] {
     const categories = this.products.map(p => p.category);
-    return ['all', ...new Set(categories)]; // Remove duplicates and add 'all' option
+    return ['all', ...new Set(categories)]; 
   }
 }
