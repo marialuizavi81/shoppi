@@ -6,6 +6,13 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.title {
+  text-align: left;
+  font-size: x-large;
+  display: flex;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #ef8a37;
+}
 
 .filters {
   display: flex;
